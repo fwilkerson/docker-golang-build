@@ -8,3 +8,6 @@ RUN wget -O /usr/local/bin/swagger "https://github.com/go-swagger/go-swagger/rel
 RUN chmod +x /usr/local/bin/swagger
 RUN wget -O /usr/local/bin/go-acc "https://github.com/fwilkerson/go-acc/releases/download/v0.2.6/go-acc_linux_amd64"
 RUN chmod +x /usr/local/bin/go-acc
+
+RUN set -x \
+	&& go get golang.org/x/tools/cmd/goimports
